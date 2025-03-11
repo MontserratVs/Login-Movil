@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/green2"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <!-- Contenedor con fondo blanco -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#55ffffff"
+        android:elevation="10dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="30dp">
+
+        <!-- Imagen del logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Campo Usuario -->
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Campo Contraseña -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Botón Sign In -->
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRESAR"
+            android:backgroundTint="@color/green"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
